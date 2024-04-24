@@ -1049,7 +1049,7 @@ filterSelect.addEventListener('change', async (event) => {
           modalContainer.style.display = 'none';
         }
       });
-      //   generatePaginationButtons(numberOfPage);
+        generatePaginationButtons(0);
     })
     .catch((error) => console.error('Error fetching the data:', error));
 });
