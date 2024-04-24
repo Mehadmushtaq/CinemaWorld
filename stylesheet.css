@@ -1,0 +1,186 @@
+body {
+  font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  background-color: black;
+} 
+.header {
+  background: #007bff;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.primary-header {
+  /* background: #fff; */
+  padding: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#trending .movie {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  /* border-radius: 5px; */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#trending-modal-container {
+  display: none;
+  position: fixed;
+  /* Absolute positioning */
+  top: 50%;
+  /* Center vertically (halfway down) */
+  left: 50%;
+  /* Center horizontally (halfway across) */
+  transform: translate(-50%, -50%);
+  /* Center using transform */
+  width: 100%;
+  /* Optional: Set width explicitly */
+  height: 100%;
+  /* Optional: Set height explicitly */
+  background-color: rgba(172, 170, 170, 0.5);
+  z-index: 10;
+  /* Window-like style (optional) */
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content-class {
+  background-color: rgb(0, 0, 0);
+  margin: 0 auto;
+  /* Remove margin for centering */
+  padding: 20px;
+  display: flex;
+  /* Allow side-by-side layout */
+  flex-direction: column;
+  /* Stack elements vertically */
+  width: 80%;
+  max-width: 500px;
+}
+
+.modal-poster {
+  width: 100%;
+  height: auto;
+  /* Adjust width as needed */
+  /* margin-right: 20px; */
+  /* Add margin for spacing */
+}
+
+.modal-details {
+  flex: 1;
+  /* Take remaining space in the modal content */
+}
+
+.close-button {
+  /* float: right; */
+  cursor: pointer;
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.close-button:hover {
+  color: red;
+}
+
+.save-to-queue-button {
+  background-color: #009DE1;
+  /* Green color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  /* Add some margin from content */
+}
+
+.save-to-queue-button:hover {
+  background-color: #009DE1;
+  /* Darker green on hover */
+}
+
+.search-container,
+.search-container-mobile {
+  position: relative;
+}
+
+#search-box,
+#search-box-mobile {
+  padding: 10px 30px 10px 10px; /* Adjust padding to make space for the icon */
+  width: 30vw; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  /* border-radius: 5px; */
+  outline: none;
+}
+
+#search-button,
+#search-button-mobile {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#search-button i,
+#search-button-mobile i {
+  color: #666;
+  font-size: 18px;
+}
+
+.sort-filter-menu {
+  padding: 1rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  /* margin-bottom: 20px; */
+}
+
+.sort-filter-menu select {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  /* border-radius: 5px; */
+  /* outline: none; */
+}
+
+.sort-menu {
+  margin-right: 0.2rem;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+}
+.filter-menu {
+  border: 1px solid #ccc;
+  background-color: #ffff;
+}
+.trending-title {
+  border-left: 0.5rem solid #007bff;
+}
+.model-content-item{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+/* .paginationBtn{
+  
+} */
+
+.pagination{
+  display: flex;
+  justify-content: center;
+}
+
+.homeBtn{
+  cursor: pointer;
+}
+.homeBtn :hover{
+  border-bottom: 1px solid white;
+}
